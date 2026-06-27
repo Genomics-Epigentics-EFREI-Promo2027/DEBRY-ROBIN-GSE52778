@@ -1,6 +1,6 @@
 # DEBRY-ROBIN-GSE52778
 
-Final Project of Genomics and Epigenetics — RNA-seq analysis of Dexamethasone Response in Airway Smooth Muscle Cells
+Final Project of Genomics and Epigenetics: RNA-seq analysis of Dexamethasone Response in Airway Smooth Muscle Cells
 
 This project reproduces the differential gene expression analysis published by Himes et al. (2014) using the RNA-seq dataset GSE52778. The objective is to identify genes and biological pathways regulated by dexamethasone in human airway smooth muscle (HASM) cells, with particular attention to the novel glucocorticoid-responsive gene CRISPLD2 and its implications for asthma pharmacogenetics.
 
@@ -58,7 +58,7 @@ This project reproduces the differential gene expression analysis published by H
 - **Biological system:** Human airway smooth muscle (HASM) cells
 - **Conditions:** Dexamethasone-treated (1 µM, 18h) vs Untreated
 - **Donors:** 4 independent HASM cell lines (N61311, N052611, N080611, N061011)
-- **Samples:** 8 (paired design — 4 treated, 4 untreated)
+- **Samples:** 8 (paired design: 4 treated, 4 untreated)
 - **Genes tested:** ~14,224 (after low-count filtering)
 - **Sequencing platform:** Illumina HiSeq 2000 (paired-end)
 
@@ -71,7 +71,7 @@ Two complementary analyses were performed:
 - **Full analysis (8 samples, 4 donors):** complete dataset with donor as a blocking factor
 - **Custom 4-sample analysis (2 donors):** end-to-end Galaxy Europe pipeline reproducibility check
 
-### Phase A — Galaxy Europe
+### Phase A - Galaxy Europe
 
 1. Raw FASTQ download from NCBI SRA
 2. Quality control (FastQC)
@@ -80,7 +80,7 @@ Two complementary analyses were performed:
 5. Gene-level count matrix generation (featureCounts)
 6. Aggregate QC report (MultiQC)
 
-### Phase B — R / DESeq2
+### Phase B - R / DESeq2
 
 1. Data import and preprocessing
 2. Low-count filtering (rowSums ≥ 10)
