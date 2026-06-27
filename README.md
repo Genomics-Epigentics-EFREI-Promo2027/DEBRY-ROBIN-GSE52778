@@ -2,7 +2,7 @@
 
 ## RNA-seq Analysis of Dexamethasone Response in Human Airway Smooth Muscle Cells
 
-**Reproduction of Himes et al. (2014) — GSE52778**
+**Reproduction of Himes et al. (2014) - GSE52778**
 
 > This project reproduces the differential gene expression analysis published by
 > Himes et al. (2014) using the RNA-seq dataset GSE52778. The objective is to
@@ -20,7 +20,7 @@
 | **Course** | ST2GEA – Genomics, Epigenetics and Applications (ST2GEA-2526PSP01) |
 | **Supervisor** | MATHEW Mano Joseph |
 | **Academic year** | 2025–2026 |
-| **Author** | Robin DEBRY — 20220XXX — ING2-BIO |
+| **Author** | Robin DEBRY - 20240681 - ING2-BIO |
 
 ---
 
@@ -32,7 +32,7 @@ treated with dexamethasone, and what biological pathways do they implicate?**
 Glucocorticoids such as dexamethasone are among the most widely prescribed
 anti-inflammatory drugs for asthma and COPD. The landmark finding of Himes et
 al. was the identification of **CRISPLD2** as a novel glucocorticoid-responsive
-gene acting as a negative modulator of the inflammatory response — a result with
+gene acting as a negative modulator of the inflammatory response - a result with
 direct pharmacogenetic implications. This project tests whether that finding is
 reproducible with a modern bioinformatics pipeline (Galaxy Europe + DESeq2),
 using both the full 8-sample dataset and a 4-sample reproducibility subset.
@@ -47,7 +47,7 @@ using both the full 8-sample dataset and a 4-sample reproducibility subset.
 | **Biological system** | Human airway smooth muscle (HASM) cells |
 | **Conditions** | Dexamethasone (1 µM, 18h) vs Untreated |
 | **Donors** | 4 independent HASM cell lines (N61311, N052611, N080611, N061011) |
-| **Design** | Paired — 4 treated / 4 untreated (8 samples total) |
+| **Design** | Paired - 4 treated / 4 untreated (8 samples total) |
 | **Genes tested** | ~14,224 (after low-count filtering) |
 | **Sequencing platform** | Illumina HiSeq 2000 (paired-end) |
 
@@ -107,11 +107,11 @@ Two complementary analyses were performed:
   SRR1039508/09 and SRR1039512/13, demonstrating end-to-end pipeline
   reproducibility without a blocking factor
 
-### Phase A — Galaxy Europe
+### Phase A - Galaxy Europe
 
 | Step | Tool | Version | Purpose |
 |---|---|---|---|
-| 1 | SRA Download | — | Fetch raw FASTQ reads |
+| 1 | SRA Download | - | Fetch raw FASTQ reads |
 | 2 | FastQC | 0.74 | Per-sample quality metrics |
 | 3 | Trim Galore | 0.6.7 | Adapter removal, quality trimming |
 | 4 | HISAT2 | 2.2.1 | Splice-aware alignment to hg19 |
@@ -120,7 +120,7 @@ Two complementary analyses were performed:
 
 Alignment target: **hg19 / GRCh37**, Ensembl release 75 annotation.
 
-### Phase B — R / DESeq2
+### Phase B - R / DESeq2
 
 1. Data import and low-count filtering (`rowSums ≥ 10`)
 2. DESeq2 model fitting (`design = ~ cell + condition`)
@@ -134,7 +134,7 @@ Alignment target: **hg19 / GRCh37**, Ensembl release 75 annotation.
    - Heatmap of top 50 DEGs
    - Gene expression boxplots (top 12 DEGs)
 6. Functional enrichment analysis
-   - Gene Ontology — Biological Process (clusterProfiler)
+   - Gene Ontology - Biological Process (clusterProfiler)
    - KEGG pathway enrichment (clusterProfiler)
 7. Deep dive: CRISPLD2 as landmark reproducibility target
 
@@ -160,7 +160,7 @@ Alignment target: **hg19 / GRCh37**, Ensembl release 75 annotation.
   glucocorticoid receptor biology: direct GRE-driven activation dominates over
   indirect NF-κB/AP-1 repression
 - **Well-established GC targets** recovered as top hits: FKBP5, TSC22D3, DUSP1,
-  KLF15 — validating the pipeline
+  KLF15 - validating the pipeline
 - **CRISPLD2** identified among the most significantly upregulated genes,
   reproducing the landmark finding of Himes et al.
 - Top GO term: *cellular response to hormone stimulus* (highest GeneRatio and
@@ -206,10 +206,10 @@ cd DEBRY-ROBIN-GSE52778
 ```
 
 2. **Download the raw count matrix** from
-   [GEO — GSE52778](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52778)
+   [GEO - GSE52778](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52778)
    and place it in `data/`.
 
-3. **Open the RStudio project** by double-clicking `rnaseq_project.Rproj` —
+3. **Open the RStudio project** by double-clicking `rnaseq_project.Rproj` -
    this sets the working directory automatically.
 
 4. **Open `RNA_seq_GSE52778_Report_FV.Rmd`** and click **Knit**, or run:
@@ -248,8 +248,8 @@ PMID: 24926665.
 ## Author
 
 **Robin DEBRY**  
-Student ID: 20220XXX  
-ING2-BIO — EFREI Paris  
+Student ID: 20240681  
+ING2-BIO - EFREI Paris  
 Academic Year 2025–2026  
-Final Project — ST2GEA-2526PSP01  
+Final Project - ST2GEA-2526PSP01  
 Supervisor: **MATHEW Mano Joseph**
