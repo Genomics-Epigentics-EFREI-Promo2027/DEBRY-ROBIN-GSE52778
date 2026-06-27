@@ -1,0 +1,66 @@
+Status	HISAT2 on dataset 61 and 62: aligned reads (BAM)
+Assigned	19104898
+Unassigned_Unmapped	189309
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	263683
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	3230243
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	1758119
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	441276
+
+
+Status	HISAT2 on dataset 63 and 64: aligned reads (BAM)
+Assigned	17422459
+Unassigned_Unmapped	270100
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	269796
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	2711424
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	1610855
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	409779
+
+
+Status	HISAT2 on dataset 65 and 66: aligned reads (BAM)
+Assigned	23598014
+Unassigned_Unmapped	82120
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	294750
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	3525491
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	2174208
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	535473
+
+
+Status	HISAT2 on dataset 67 and 68: aligned reads (BAM)
+Assigned	14121272
+Unassigned_Unmapped	51378
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	192574
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	1881663
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	1226956
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	362805
