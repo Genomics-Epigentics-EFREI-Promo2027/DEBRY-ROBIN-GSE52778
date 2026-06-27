@@ -10,23 +10,23 @@ This project reproduces the differential gene expression analysis published by H
 
 .
 
-├── RNA_seq_GSE52778_Report_FV.Rmd   # Main analysis notebook
+├── RNA_seq_GSE52778_Report_FV.Rmd
 
-├── RNA_seq_GSE52778_Report_FV.html  # Rendered report
+├── RNA_seq_GSE52778_Report_FV.html
 
 ├── README.md
 
-├── data/                            # Input count matrix (from Galaxy/featureCounts)
+├── data/
 
-├── docs/                            # Supporting documentation
+├── docs/
 
-├── galaxy_workflow/                 # Galaxy Europe workflow and MultiQC reports
+├── galaxy_workflow/
 
-├── r_analysis/                      # R scripts and intermediate objects
+├── r_analysis/
 
 └── results/
 
-└── figures/                     # All generated plots (PNG)
+└── figures/
 
 ├── Figure1_Volcano.png
 
@@ -145,6 +145,6 @@ Himes BE, Jiang X, Wagner P, Hu R, Wang Q, Klanderman B, Whitaker RM, Duan Q, La
 
 ## Author
 
-Robin DEBRY — ING2-BIO  
-Final Project — ST2GEA-2526PSP01  
+Robin DEBRY - ING2-BIO  
+Final Project - ST2GEA-2526PSP01  
 Supervisor: MATHEW Mano Joseph
