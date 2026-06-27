@@ -5,9 +5,9 @@
 **Reproduction of Himes et al. (2014) - GSE52778**
 
 > This project reproduces the differential gene expression analysis published by
-> Himes et al. (2014) using the RNA-seq dataset GSE52778. The objective is to
+> **Himes et al. (2014)** using the RNA-seq dataset **GSE52778**. The objective is to
 > identify genes and biological pathways regulated by dexamethasone in human
-> airway smooth muscle (HASM) cells, with particular attention to the novel
+> airway smooth muscle (**HASM**) cells, with particular attention to the novel
 > glucocorticoid-responsive gene **CRISPLD2** and its implications for asthma
 > pharmacogenetics.
 
@@ -34,7 +34,7 @@ anti-inflammatory drugs for asthma and COPD. The landmark finding of Himes et
 al. was the identification of **CRISPLD2** as a novel glucocorticoid-responsive
 gene acting as a negative modulator of the inflammatory response - a result with
 direct pharmacogenetic implications. This project tests whether that finding is
-reproducible with a modern bioinformatics pipeline (Galaxy Europe + DESeq2),
+reproducible with a modern bioinformatics pipeline (**Galaxy Europe + DESeq2**),
 using both the full 8-sample dataset and a 4-sample reproducibility subset.
 
 ---
@@ -70,18 +70,18 @@ using both the full 8-sample dataset and a 4-sample reproducibility subset.
 
 ```text
 .
-├── RNA_seq_GSE52778_Report_FV.Rmd    # Main analysis notebook
-├── RNA_seq_GSE52778_Report_FV.html   # Rendered HTML report
-├── rnaseq_project.Rproj              # RStudio project file
+├── RNA_seq_GSE52778_Report_FV.Rmd
+├── RNA_seq_GSE52778_Report_FV.html
+├── rnaseq_project.Rproj
 ├── README.md
 │
-├── data/                             # Input count matrix (featureCounts output)
-├── docs/                             # Supporting documentation
-├── galaxy_workflow/                  # Galaxy Europe workflow (.ga) and MultiQC reports
-├── r_analysis/                       # R scripts and intermediate objects
+├── data/
+├── docs/
+├── galaxy_workflow/
+├── r_analysis/
 │
 └── results/
-    └── figures/                      # All generated plots (PNG)
+    └── figures/
         ├── Figure1_Volcano.png
         ├── Figure2_MA_Plot.png
         ├── Figure3_Heatmap_Top50DEG.png
@@ -102,7 +102,7 @@ using both the full 8-sample dataset and a 4-sample reproducibility subset.
 Two complementary analyses were performed:
 
 - **Full analysis (8 samples, 4 donors):** complete dataset with donor as a
-  blocking factor in the DESeq2 model (`design = ~ cell + condition`)
+  blocking factor in the DESeq2 model (design = ~ cell + condition)
 - **Custom 4-sample analysis (2 donors):** independent Galaxy Europe run on
   SRR1039508/09 and SRR1039512/13, demonstrating end-to-end pipeline
   reproducibility without a blocking factor
@@ -122,8 +122,8 @@ Alignment target: **hg19 / GRCh37**, Ensembl release 75 annotation.
 
 ### Phase B - R / DESeq2
 
-1. Data import and low-count filtering (`rowSums ≥ 10`)
-2. DESeq2 model fitting (`design = ~ cell + condition`)
+1. Data import and low-count filtering (rowSums ≥ 10)
+2. DESeq2 model fitting (design = ~ cell + condition)
 3. LFC shrinkage (apeglm estimator)
 4. Quality control
    - Sample-to-sample distance heatmap (VST-normalised)
@@ -207,18 +207,18 @@ cd DEBRY-ROBIN-GSE52778
 
 2. **Download the raw count matrix** from
    [GEO - GSE52778](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52778)
-   and place it in `data/`.
+   and place it in **data/**.
 
-3. **Open the RStudio project** by double-clicking `rnaseq_project.Rproj` -
+3. **Open the RStudio project** by double-clicking **rnaseq_project.Rproj** -
    this sets the working directory automatically.
 
-4. **Open `RNA_seq_GSE52778_Report_FV.Rmd`** and click **Knit**, or run:
+4. **Open RNA_seq_GSE52778_Report_FV.Rmd** and click **Knit**, or run:
 
 ```r
 rmarkdown::render("RNA_seq_GSE52778_Report_FV.Rmd")
 ```
 
-All figures will be generated in `results/figures/`.
+All figures will be generated in **results/figures/**.
 
 ---
 
@@ -240,16 +240,16 @@ Lasky-Su J, Nikolos C, Jester W, Johnson M, Panettieri RA Jr, Tantisira KG,
 Weiss ST, Lu Q. (2014). RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as
 a Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway
 Smooth Muscle Cells. *PLoS ONE*, 9(6):e99625.
-doi: [10.1371/journal.pone.0099625](https://doi.org/10.1371/journal.pone.0099625)
-PMID: 24926665.
+**doi**: [10.1371/journal.pone.0099625](https://doi.org/10.1371/journal.pone.0099625)
+**PMID**: 24926665.
 
 ---
 
 ## Author
 
 **Robin DEBRY**  
-Student ID: 20240681  
+*Student ID*: 20240681  
 ING2-BIO - EFREI Paris  
 Academic Year 2025–2026  
 Final Project - ST2GEA-2526PSP01  
-Supervisor: **MATHEW Mano Joseph**
+*Supervisor*: **MATHEW Mano Joseph**
