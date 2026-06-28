@@ -145,7 +145,7 @@ Alignment target: **hg19 / GRCh37**, Ensembl release 75 annotation.
 | Parameter | Value |
 |---|---|
 | **FDR threshold** | 0.05 |
-| **\|log2FC\| threshold** | 1.0 (minimum two-fold change) |
+| **\log2FC\ threshold** | 1.0 (minimum two-fold change) |
 | **Multiple testing correction** | Benjamini–Hochberg (BH) |
 | **Normalisation** | Variance Stabilising Transformation (VST) |
 | **LFC shrinkage** | apeglm estimator |
